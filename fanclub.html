@@ -235,7 +235,7 @@
   color: #B0B0B0;
 } 
 
-/* Twinkling star background */
+/* Brighter twinkling star background */
 
 body::before,
 body::after {
@@ -249,35 +249,38 @@ body::after {
   z-index: -1;
 
   background-image:
-    radial-gradient(1px 1px at 20px 30px, white, transparent),
-    radial-gradient(1px 1px at 70px 80px, #B0B0B0, transparent),
-    radial-gradient(1.5px 1.5px at 110px 40px, white, transparent),
-    radial-gradient(1px 1px at 145px 105px, white, transparent),
-    radial-gradient(1px 1px at 45px 125px, #B0B0B0, transparent);
+    radial-gradient(1.5px 1.5px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 55px 95px, white, transparent),
+    radial-gradient(2px 2px at 90px 45px, white, transparent),
+    radial-gradient(1.5px 1.5px at 130px 120px, #d9d9d9, transparent),
+    radial-gradient(1px 1px at 155px 65px, white, transparent),
+    radial-gradient(2px 2px at 185px 20px, white, transparent),
+    radial-gradient(1px 1px at 210px 105px, #d9d9d9, transparent),
+    radial-gradient(1.5px 1.5px at 245px 55px, white, transparent);
 
-  background-size: 170px 150px;
+  background-size: 260px 150px;
 }
 
 body::before {
-  opacity: 0.45;
-  animation: twinkle 3s ease-in-out infinite alternate;
+  opacity: 0.75;
+  animation: twinkle 2.5s ease-in-out infinite alternate;
 }
 
 body::after {
-  background-position: 85px 50px;
-  opacity: 0.2;
-  animation: twinkle 5s ease-in-out infinite alternate-reverse;
+  background-position: 130px 75px;
+  opacity: 0.45;
+  animation: twinkle 4s ease-in-out infinite alternate-reverse;
 }
 
 @keyframes twinkle {
   from {
-    opacity: 0.2;
+    opacity: 0.35;
   }
 
   to {
-    opacity: 0.7;
+    opacity: 1;
   }
-}    
+}  
     
   </style>
 
