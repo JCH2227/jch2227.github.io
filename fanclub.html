@@ -17,6 +17,7 @@
       color: white;
       font-family: Arial;
       margin: 8px;
+      isolation: isolate;
     }
 
     /* Main navigation */
@@ -232,7 +233,52 @@
 
 .camp-status strong {
   color: #B0B0B0;
+} 
+
+/* Twinkling star background */
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+
+  background-image:
+    radial-gradient(1px 1px at 20px 30px, white, transparent),
+    radial-gradient(1px 1px at 70px 80px, #B0B0B0, transparent),
+    radial-gradient(1.5px 1.5px at 110px 40px, white, transparent),
+    radial-gradient(1px 1px at 145px 105px, white, transparent),
+    radial-gradient(1px 1px at 45px 125px, #B0B0B0, transparent);
+
+  background-size: 170px 150px;
+}
+
+body::before {
+  opacity: 0.45;
+  animation: twinkle 3s ease-in-out infinite alternate;
+}
+
+body::after {
+  background-position: 85px 50px;
+  opacity: 0.2;
+  animation: twinkle 5s ease-in-out infinite alternate-reverse;
+}
+
+@keyframes twinkle {
+  from {
+    opacity: 0.2;
+  }
+
+  to {
+    opacity: 0.7;
+  }
 }    
+    
   </style>
 
 </head>
