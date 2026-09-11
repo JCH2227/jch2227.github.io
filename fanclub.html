@@ -281,6 +281,42 @@ body::after {
     opacity: 1;
   }
 }  
+
+.site-title {
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.site-title h1 {
+  text-align: center;
+  font-size: 32px;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+}
+
+.header-flamingo {
+  position: absolute;
+  top: 50%;
+  width: 55px;
+  height: auto;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.flamingo-left {
+  right: calc(100% + 15px);
+}
+
+.flamingo-right {
+  left: calc(100% + 15px);
+}
+
+@media (max-width: 850px) {
+  .header-flamingo {
+    display: none;
+  }
+}
     
   </style>
 
@@ -289,9 +325,19 @@ body::after {
 
 <body>
 
-  <h1 style="text-align:center; font-size:32px;">
+  <div class="site-title">
+  <img src="photos/misc/flamingo-left.png"
+       class="header-flamingo flamingo-left"
+       alt="">
+
+  <h1>
     Bob Sweikert Fan Site & Indy 500 Camping Group
   </h1>
+
+  <img src="photos/misc/flamingo-right.png"
+       class="header-flamingo flamingo-right"
+       alt="">
+  </div>
 
 
   <!-- Main Navigation Menu -->
