@@ -42,6 +42,21 @@
     <i>"Dedicated to preserving the memory of 1955 Indianapolis 500 winner Bob Sweikert"</i>
   </p>
 
+<!-- Halloween Decoration -->
+<div id="halloween" style="display:none; text-align:center;">
+  <img src="photos/misc/pumpkin.gif" width="150" alt="Halloween Pumpkin">
+</div>
+
+<script>
+  const today = new Date();
+  const month = today.getMonth();
+
+  // October is month 9 (January = 0)
+  if (month === 9) {
+    document.getElementById("halloween").style.display = "block";
+  }
+</script>
+  
 </body>
 
 </html>
