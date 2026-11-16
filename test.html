@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=950">
 
   <title>Bob Sweikert Fan Site - Test Layout</title>
 
@@ -11,7 +11,7 @@
 
     body {
       margin: 0;
-      background-color: #e7d8a2;
+      background-color: #573d1e;
       font-family: Arial, Helvetica, sans-serif;
       color: #111;
     }
@@ -19,10 +19,9 @@
     /* Entire website */
     .page {
       width: 950px;
-      max-width: 95%;
       margin: 0 auto;
-      background-color: #f7edc5;
-      border: 2px solid #a88d45;
+      background-color: #e9e4c6;
+      border: 2px solid #998771;
     }
 
     /* Top banner */
@@ -34,10 +33,9 @@
       display: flex;
       align-items: center;
       justify-content: center;
-
       text-align: center;
 
-      border-bottom: 5px solid #f4a6b8;
+      border-bottom: 5px solid #d95f1f;
     }
 
     .banner h1 {
@@ -47,7 +45,7 @@
 
     .banner p {
       margin: 5px 0 0 0;
-      color: #f4a6b8;
+      color: #d95f1f;
       font-weight: bold;
     }
 
@@ -61,36 +59,38 @@
     .sidebar {
       width: 190px;
       flex-shrink: 0;
-      background-color: #dfc66e;
+      background-color: #d2b48c;
       min-height: 700px;
-      border-right: 1px solid #b89d4f;
+      border-right: 1px solid #998771;
     }
 
     .sidebar-title {
-      background-color: #c5a84e;
+      background-color: #452f18;
+      color: white;
       font-weight: bold;
       padding: 7px 10px;
-      border-bottom: 1px solid #9e843c;
+      border-bottom: 1px solid #998771;
     }
 
     .sidebar a {
       display: block;
       color: black;
       text-decoration: none;
-      padding: 5px 10px;
-      border-bottom: 1px solid #c5ad61;
+      padding: 6px 10px;
+      border-bottom: 1px solid #998771;
       font-size: 14px;
     }
 
     .sidebar a:hover {
-      background-color: #f4a6b8;
+      background-color: #d95f1f;
+      color: #ffffff;
     }
 
     /* MAIN CONTENT */
     .content {
       flex: 1;
       padding: 14px;
-      background-color: #fffdf2;
+      background-color: #f8f7ed;
       min-height: 700px;
     }
 
@@ -98,15 +98,15 @@
       margin-top: 0;
     }
 
-    /* Little old-school content boxes */
+    /* Old-school content boxes */
     .section-box {
-      border: 2px solid #722020;
+      border: 2px solid #485b36;
       margin-bottom: 15px;
       background-color: white;
     }
 
     .section-heading {
-      background-color: #722020;
+      background-color: #485b36;
       color: white;
       padding: 7px 10px;
       font-weight: bold;
@@ -120,6 +120,7 @@
 
     .section-content img {
       max-width: 100%;
+      height: auto;
     }
 
     /* Two small feature boxes */
@@ -131,12 +132,12 @@
 
     .feature {
       width: 50%;
-      border: 2px solid #722020;
+      border: 2px solid #485b36;
       background-color: white;
     }
 
     .feature h3 {
-      background-color: #722020;
+      background-color: #485b36;
       color: white;
       margin: 0;
       padding: 7px;
@@ -144,6 +145,16 @@
 
     .feature-content {
       padding: 10px;
+      line-height: 1.5;
+    }
+
+    /* Links */
+    a {
+      color: #34531f;
+    }
+
+    a:hover {
+      color: #6b7d3e;
     }
 
     /* Footer */
@@ -151,50 +162,8 @@
       text-align: center;
       font-size: 12px;
       padding: 12px;
-      background-color: #eadb9e;
-      border-top: 1px solid #b89d4f;
-    }
-
-    /* Phone layout */
-    @media (max-width: 700px) {
-
-      .page {
-        max-width: 100%;
-        border-left: none;
-        border-right: none;
-      }
-
-      .banner {
-        height: 120px;
-      }
-
-      .banner h1 {
-        font-size: 27px;
-      }
-
-      .layout {
-        display: block;
-      }
-
-      .sidebar {
-        width: 100%;
-        min-height: 0;
-        border-right: none;
-      }
-
-      .sidebar a {
-        padding: 8px 12px;
-      }
-
-      .feature-row {
-        display: block;
-      }
-
-      .feature {
-        width: auto;
-        margin-bottom: 12px;
-      }
-
+      background-color: #d2b48c;
+      border-top: 1px solid #998771;
     }
 
   </style>
@@ -270,6 +239,7 @@
          ===================== -->
 
     <main class="content">
+
 
       <div class="feature-row">
 
